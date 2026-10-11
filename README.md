@@ -1,4 +1,4 @@
-# Jektor Browser
+﻿# Jektor Browser — браузер для AI Chat
 
 Лёгкий мини-браузер для Windows на движке Microsoft Edge WebView2.
 Одна форма, много вкладок, свой WebView2 в каждой. Рабочее пространство для AI.
