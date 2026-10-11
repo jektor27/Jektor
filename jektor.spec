@@ -1,8 +1,14 @@
 # -*- mode: python ; coding: utf-8 -*-
 import os
+import importlib.util
 from PyInstaller.utils.hooks import collect_all
 
-wvlib = r"C:\Users\miroz\AppData\Roaming\Python\Python314\site-packages\webview\lib"
+# Путь к webview/lib ищем динамически (работает и локально, и в CI).
+_webview_spec = importlib.util.find_spec("webview")
+if _webview_spec and _webview_spec.origin:
+    wvlib = os.path.join(os.path.dirname(_webview_spec.origin), "lib")
+else:
+    wvlib = os.environ.get("JEKTOR_WEBVIEW2_LIB", "")
 
 datas = []
 binaries = []

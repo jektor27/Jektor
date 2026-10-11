@@ -38,8 +38,22 @@
 3. Нужен установленный **Microsoft Edge WebView2 Runtime** (обычно уже есть в Windows 10/11).
    Если его нет, программа подскажет ссылку на установку.
 
-Файл `.exe` не подписан сертификатом, поэтому Windows SmartScreen может показать предупреждение
-«Неизвестный издатель». Это нормально для открытых проектов — нажмите «Подробнее» → «Выполнить в любом случае».
+Сборка распространяется через раздел [Releases](https://github.com/jektor27/Jektor/releases).
+
+## Code signing policy
+
+Free code signing provided by [SignPath.io](https://about.signpath.io),
+certificate by [SignPath Foundation](https://signpath.org).
+
+- Authors: [@jektor27](https://github.com/jektor27)
+- Reviewers: [@jektor27](https://github.com/jektor27)
+- Approvers: [@jektor27](https://github.com/jektor27)
+
+## Privacy
+
+Jektor Browser does not collect or transmit any personal data. It is a local
+desktop application with no accounts, telemetry, or tracking. See
+[PRIVACY.md](PRIVACY.md) for details.
 
 ## Запуск из исходников
 
