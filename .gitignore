@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Сборка
+build/
+dist/
+*.spec.bak
+
+# Пользовательские данные (не публикуются)
+webview_profile/
+webview_profile_old/
+browser.log
+bookmarks.json
+settings.json
+sessions.json
+portable.flag
+_backup_before_portable/
+
+# Черновики и старые версии (в публичный репозиторий не идут)
+minibrowser.py
+minibrowser_backup_*.py
+native_browser_backup_*.py
+*.spec.bak
